@@ -1,22 +1,38 @@
-// -----------------------------------------------------------------------------
-// This file contains very basic styles.
-// -----------------------------------------------------------------------------
-
-/**
- * Set up a decent box model on the root element
- */
 html {
   box-sizing: border-box;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 81px 36px 36px 36px;
+}
+.dashboard {
+  width: 320px;
+  height: 192px;
+  margin-bottom: 120px;
+  @media screen and (min-width: 850px) {
+    width: 640px;
+    height: 383px;
+    margin-bottom: 72px;
+  }
 }

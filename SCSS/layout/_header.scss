@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  margin-bottom: 32px;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 850px) {
+    margin-bottom: 40px;
+  }
+}
+.logo-site {
+  width: 56px;
+  height: 24px;
+  margin-bottom: 32px;
+  object-fit: contain;
+  @media screen and (min-width: 850px) {
+    width: 90px;
+    height: 39px;
+  }
+}
