@@ -34,6 +34,32 @@ main {
       }
     }
   }
+  &.ok {
+    margin-bottom: 40px;
+    justify-content: center;
+    animation: bounceX 250ms linear 150ms 1 alternate;
+    @media screen and (min-width: 850px) {
+      margin-bottom: 68px;
+      align-items: initial;
+    }
+    input {
+      border-color: green;
+    }
+    .error-message {
+      margin-bottom: 20px;
+      margin-top: 2px;
+      opacity: 1;
+      color: green;
+      visibility: visible;
+      height: initial;
+      align-self: flex-start;
+      padding-left: 32px;
+      @media screen and (min-width: 850px) {
+        padding-top: 6px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 input {

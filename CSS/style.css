@@ -225,6 +225,36 @@ main.active .error-message {
     margin-bottom: 0;
   }
 }
+main.ok {
+  margin-bottom: 40px;
+  justify-content: center;
+  animation: bounceX 250ms linear 150ms 1 alternate;
+}
+@media screen and (min-width: 850px) {
+  main.ok {
+    margin-bottom: 68px;
+    align-items: initial;
+  }
+}
+main.ok input {
+  border-color: green;
+}
+main.ok .error-message {
+  margin-bottom: 20px;
+  margin-top: 2px;
+  opacity: 1;
+  color: green;
+  visibility: visible;
+  height: initial;
+  align-self: flex-start;
+  padding-left: 32px;
+}
+@media screen and (min-width: 850px) {
+  main.ok .error-message {
+    padding-top: 6px;
+    margin-bottom: 0;
+  }
+}
 
 input {
   background: #ffffff;
