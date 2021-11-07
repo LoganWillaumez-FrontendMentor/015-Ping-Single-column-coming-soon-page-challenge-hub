@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   display: grid;
   place-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 a {
   text-decoration: none;
