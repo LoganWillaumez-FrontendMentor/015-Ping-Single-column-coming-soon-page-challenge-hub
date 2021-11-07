@@ -44,3 +44,20 @@ input::placeholder {
     font-size: 12px;
   }
 }
+.error-message {
+  visibility: hidden;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #ff5466;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: all 150ms ease-in-out;
+  @media screen and (min-width: 850px) {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
