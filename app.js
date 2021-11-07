@@ -6,17 +6,20 @@ const regExp =
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   if (!input.value.match(regExp)) {
-    resetAnim(main);
-    main.classList.remove('ok')
+    errorState(main);
   } else {
-    main.classList.remove("active");
-    main.classList.add("ok");
-    document.querySelector('.error-message').textContent='Perfect ! ';
+    okState(main)
   }
 });
-let resetAnim = (e) => {
+let errorState = (e) => {
+  e.classList.remove('ok')
   e.classList.remove("active");
   void e.offsetWidth;
   e.classList.add("active");
-    document.querySelector('.error-message').textContent='Please provide a valid email address ! ';
+  document.querySelector('.error-message').textContent='Please provide a valid email address ! ';
 };
+let okState= (e) =>{
+  e.classList.remove("active");
+  e.classList.add("ok");
+  document.querySelector('.error-message').textContent='Perfect ! ';
+}
