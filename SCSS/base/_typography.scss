@@ -35,6 +35,10 @@ input::placeholder {
   font-weight: 600;
   font-size: 12px;
   color: #ffffff;
+  @media screen and (min-width: 850px) {
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
 .copyright {
   font-weight: 300;
