@@ -12,6 +12,6 @@ Front end mentor challenge : [Link](https://www.frontendmentor.io/challenges/pin
   
 ## Demo
 
-https://loganwillaumez.github.io/Ping-Single-column-coming-soon-page-challenge-hub/
+https://loganwillaumez-frontendmentor.github.io/015-Ping-Single-column-coming-soon-page-challenge-hub/
 
   
